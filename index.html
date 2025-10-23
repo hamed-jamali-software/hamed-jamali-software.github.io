@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamed Jamali | AI Researcher</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-        
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <!--=============== BOXICONS ===============-->
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Hamed Jamali</title>
 </head>
 <body>
-  <header class="header" id="header">
+  <header class="header scroll-header" id="header">
     <nav class="nav container">
       <a href="#home" class="nav__logo">Hamed Jamali</a>
       <div class="nav__menu">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link active-link"><i class='bx bx-home-alt'></i></a></li>
-          <li><a href="#about" class="nav__link"><i class='bx bx-user'></i></a></li>
-          <li><a href="#experience" class="nav__link"><i class="fa-solid fa-briefcase"></i></a></li>
-          <li><a href="#skills" class="nav__link"><i class='bx bx-book'></i></a></li>
-          <li><a href="#contact" class="nav__link"><i class='bx bx-message-square-detail'></i></a></li>
+          <li class="nav_item"><a href="#home" class="nav__link active-link"><i class='bx bx-home-alt'></i></a></li>
+          <li class="nav_item"><a href="#about" class="nav__link"><i class='bx bx-user'></i></a></li>
+          <li class="nav_item"><a href="#experience" class="nav__link"><i class="fa-solid fa-briefcase"></i></a></li>
+          <li class="nav_item"><a href="#skills" class="nav__link"><i class='bx bx-book'></i></a></li>
+          <li class="nav_item"><a href="#services" class="nav__link"><i class='bx bx-briefcase'></i></a></li>
+          <li class="nav_item"><a href="#contact" class="nav__link"><i class='bx bx-message-square-detail'></i></a></li>
         </ul>
       </div>
+      <i class='bx bx-moon change-theme' id='theme-button'></i>
     </nav>
   </header>
 
   <main class="main">
+    <!--=============== HOME ===============-->
     <section class="home section" id="home">
       <div class="home__container container grid">
         <div class="home__data">
@@ -41,87 +37,129 @@
           <h1 class="home__name">Hamed Jamali</h1>
           <h3 class="home__education">AI Researcher & Machine Learning Engineer</h3>
           <div class="home__buttons">
+            <a href="Hamed-Jamali-CV.pdf" class="button button--ghost" download>Download CV</a>
             <a href="#about" class="button">About Me</a>
           </div>
+        </div>
+        <div class="home__handle">
+          <img src="img/hamed-profile.png" alt="Hamed Jamali" class="home__img">
         </div>
         <div class="home__social">
           <a href="https://github.com/hamed-jamali-software" target="_blank" class="home__social-link"><i class='bx bxl-github'></i></a>
           <a href="https://www.linkedin.com/in/hamedjamali/" target="_blank" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
         </div>
+        <a href="#about" class="home__scroll"><i class='bx bx-mouse home__scroll-icon'></i><span class="home__scroll-name">Scroll Down</span></a>
       </div>
     </section>
 
+    <!--=============== ABOUT ===============-->
     <section class="about section" id="about">
+      <span class="section__subtitle">My Intro</span>
       <h2 class="section__title">About Me</h2>
       <div class="about__container container grid">
+        <img src="img/about-me.jpg" alt="about image" class="about__img">
         <div class="about__data">
-          <p class="about__description">
-            I’m an AI researcher and machine learning engineer passionate about designing intelligent systems that bridge theory with real-world impact. With experience in Python, Flask, and deep learning frameworks, I build scalable, secure, and high-performance applications powered by data and innovation.
-          </p>
-          <ul>
-            <li><strong>M.Sc. in Artificial Intelligence</strong> – Hochschule Ansbach, Germany</li>
-            <li><strong>M.Sc. in Computer Software Engineering</strong> – Islamic Azad University of Tehran, Iran</li>
-          </ul>
+          <div class="about__info">
+            <div class="about__box">
+              <i class="fa-solid fa-user-graduate about__icon"></i>
+              <h3 class="about__title">Master<br>Degree</h3>
+              <span class="about__subtitle">Hochschule Ansbach<br>Artificial Intelligence</span>
+            </div>
+            <div class="about__box">
+              <i class="fa-solid fa-building-columns about__icon"></i>
+              <h3 class="about__title">Master<br>Degree</h3>
+              <span class="about__subtitle">Islamic Azad University<br>Software Engineering</span>
+            </div>
+            <div class="about__box">
+              <i class="fa-solid fa-language about__icon"></i>
+              <h3 class="about__title">Languages</h3>
+              <span class="about__subtitle">English<br>Persian</span>
+            </div>
+          </div>
+          <p class="about__description">I’m an AI researcher and machine learning engineer passionate about designing intelligent systems that bridge theory with real-world impact. Experienced in Python, Flask, TensorFlow, PyTorch, and data-driven backend development following Clean Code and SOLID principles.</p>
+          <a href="#contact" class="button">Contact Me</a>
         </div>
       </div>
     </section>
 
+    <!--=============== EXPERIENCE ===============-->
     <section class="experience section" id="experience">
-      <h2 class="section__title">Experience</h2>
-      <div class="container grid">
-        <div>
-          <h3>AI & ML Engineer (Freelance)</h3>
-          <span>2023 – Present</span>
-          <p>Designed and deployed AI-powered applications using TensorFlow, PyTorch, and scikit-learn.</p>
-        </div>
-        <div>
-          <h3>Flask Developer</h3>
-          <span>2022 – Present</span>
-          <p>Built RESTful APIs and scalable backend services following Clean Code, SOLID, and TDD principles.</p>
-        </div>
-        <div>
-          <h3>Python Data Scientist</h3>
-          <span>Self-employed</span>
-          <p>Applied statistical analysis, feature engineering, and model optimization for business data.</p>
+      <span class="section__subtitle">Experience</span>
+      <h2 class="section__title">Educational and Job Experience</h2>
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <h3 class="skills__title">Career Experience</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data"><i class="fa-solid fa-robot"></i><div><h3 class="skills__name">AI & ML Engineer (Freelance)</h3><span class="skills__level">2023 – Present</span></div></div>
+              <div class="skills__data"><i class="fa-solid fa-database"></i><div><h3 class="skills__name">Python Data Scientist</h3><span class="skills__level">2022 – Present</span></div></div>
+              <div class="skills__data"><i class="fa-solid fa-code"></i><div><h3 class="skills__name">Flask Developer</h3><span class="skills__level">2022 – Present</span></div></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!--=============== SKILLS ===============-->
     <section class="skills section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <ul class="skills__list">
-        <li>Python</li>
-        <li>Flask / Django / FastAPI</li>
-        <li>TensorFlow / PyTorch / scikit-learn</li>
-        <li>Pandas / NumPy / SQL</li>
-        <li>Machine Learning / Deep Learning / NLP / Computer Vision</li>
-        <li>Clean Code / SOLID / Unit Testing</li>
-      </ul>
-    </section>
-
-    <section class="services section" id="services">
-      <h2 class="section__title">What I Offer</h2>
-      <div class="container grid">
-        <div class="services__card">
-          <h3>AI Model Development</h3>
-          <p>Build and train deep learning models for NLP and computer vision tasks.</p>
-        </div>
-        <div class="services__card">
-          <h3>Backend & API Development</h3>
-          <p>Create scalable, secure APIs using Flask and FastAPI.</p>
-        </div>
-        <div class="services__card">
-          <h3>Data Science & Analysis</h3>
-          <p>Extract insights from complex datasets with visualization and predictive modeling.</p>
+      <span class="section__subtitle">My Abilities</span>
+      <h2 class="section__title">Technical Skills</h2>
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data"><i class='bx bx-check'></i><div><h3 class="skills__name">Python</h3><span class="skills__level">Advanced</span></div></div>
+              <div class="skills__data"><i class='bx bx-check'></i><div><h3 class="skills__name">Flask / Django / FastAPI</h3><span class="skills__level">Professional</span></div></div>
+              <div class="skills__data"><i class='bx bx-check'></i><div><h3 class="skills__name">TensorFlow / PyTorch / scikit-learn</h3><span class="skills__level">Advanced</span></div></div>
+              <div class="skills__data"><i class='bx bx-check'></i><div><h3 class="skills__name">Data Science / NLP / Computer Vision</h3><span class="skills__level">Expert</span></div></div>
+              <div class="skills__data"><i class='bx bx-check'></i><div><h3 class="skills__name">SQL / Pandas / NumPy</h3><span class="skills__level">Advanced</span></div></div>
+              <div class="skills__data"><i class='bx bx-check'></i><div><h3 class="skills__name">Clean Code / SOLID / Unit Testing</h3><span class="skills__level">Professional</span></div></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!--=============== SERVICES ===============-->
+    <section class="services section" id="services">
+      <span class="section__subtitle">My Services</span>
+      <h2 class="section__title">What I Offer</h2>
+      <div class="services__container container grid">
+        <div class="services__card">
+          <h3 class="services__title">AI Model Development</h3>
+          <p class="services__modal-description">Build and train deep learning models for NLP, Computer Vision, and Generative AI applications.</p>
+        </div>
+        <div class="services__card">
+          <h3 class="services__title">Backend & API Development</h3>
+          <p class="services__modal-description">Design secure, scalable REST APIs with Flask and FastAPI following SOLID and TDD principles.</p>
+        </div>
+        <div class="services__card">
+          <h3 class="services__title">Data Science & Analytics</h3>
+          <p class="services__modal-description">Extract insights from data, automate reports, and build machine learning pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== CONTACT ===============-->
     <section class="contact section" id="contact">
+      <span class="section__subtitle">Get in Touch</span>
       <h2 class="section__title">Contact Me</h2>
-      <p>Email: <a href="mailto:hamed.jamali.ai@gmail.com">hamed.jamali.ai@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/hamed-jamali-software">github.com/hamed-jamali-software</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/hamedjamali/">linkedin.com/in/hamedjamali</a></p>
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <div class="contact__info">
+            <i class='bx bx-envelope contact__icon'></i>
+            <div><h3 class="contact__title">Email</h3><span class="contact__subtitle">hamed.jamali.ai@gmail.com</span></div>
+          </div>
+          <div class="contact__info">
+            <i class='bx bxl-github contact__icon'></i>
+            <div><h3 class="contact__title">GitHub</h3><a href="https://github.com/hamed-jamali-software" target="_blank" class="contact__subtitle">github.com/hamed-jamali-software</a></div>
+          </div>
+          <div class="contact__info">
+            <i class='bx bxl-linkedin contact__icon'></i>
+            <div><h3 class="contact__title">LinkedIn</h3><a href="https://www.linkedin.com/in/hamedjamali/" target="_blank" class="contact__subtitle">linkedin.com/in/hamedjamali</a></div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>
